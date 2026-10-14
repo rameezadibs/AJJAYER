@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bronze: #A47756;
+  --color-bronze-light: #C69D7B;
+  --color-charcoal: #3B332B;
+  --color-ivory: #F5F0E8;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Subtle Architectural Grid Pattern */
+.architectural-grid {
+  background-size: 60px 60px;
+  background-image: 
+    linear-gradient(to right, rgba(59, 51, 43, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(59, 51, 43, 0.04) 1px, transparent 1px);
+}
+
+.architectural-grid-dark {
+  background-size: 60px 60px;
+  background-image: 
+    linear-gradient(to right, rgba(245, 240, 232, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(245, 240, 232, 0.05) 1px, transparent 1px);
+}
+
+/* Technical Drafting Crosshair */
+.drafting-crosshair {
+  position: relative;
+}
+.drafting-crosshair::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  right: -8px;
+  height: 1px;
+  background-color: rgba(164, 119, 86, 0.4);
+}
+.drafting-crosshair::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -8px;
+  bottom: -8px;
+  width: 1px;
+  background-color: rgba(164, 119, 86, 0.4);
+}
+
+/* Architectural Measurement Line */
+.dimension-line {
+  position: relative;
+}
+.dimension-line::before,
+.dimension-line::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  background-color: currentColor;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.dimension-line::before {
+  left: 0;
+}
+.dimension-line::after {
+  right: 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F0E8;
+}
+::-webkit-scrollbar-thumb {
+  background: #A47756;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8E6142;
+}
