@@ -127,9 +127,9 @@ export default function ContactModal({ isOpen, onClose }) {
                   <div className="flex items-center gap-2.5">
                     <Phone className="w-3.5 h-3.5 text-[#A47756] shrink-0" />
                     <div>
-                      <span className="block text-[9px] font-mono opacity-60">TELEPHONE</span>
-                      <a href="tel:+97142958899" className="font-medium hover:text-[#A47756]">
-                        +971 4 295 8899
+                      <span className="block text-[9px] font-mono opacity-60">PHONE &bull; WHATSAPP</span>
+                      <a href="tel:+971541696975" className="font-medium hover:text-[#A47756]">
+                        +971 54 169 6975
                       </a>
                     </div>
                   </div>

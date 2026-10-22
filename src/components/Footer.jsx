@@ -55,8 +55,8 @@ function WhatsAppIcon({ className = "w-3.5 h-3.5" }) {
 }
 
 export default function Footer() {
-  const phoneNumber = "+971 54 596 2935";
-  const whatsappNumber = "971545962935";
+  const phoneNumber = "+971 54 169 6975";
+  const whatsappNumber = "971541696975";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hello AJJAYER Constructions, I would like to inquire about your services.")}`;
 
   return (
@@ -77,11 +77,11 @@ export default function Footer() {
               </div>
               <span className="opacity-40">&bull;</span>
               <a 
-                href="tel:+971545962935" 
+                href="tel:+971541696975" 
                 className="flex items-center gap-1.5 font-mono text-xs font-medium text-[#3B332B] hover:text-[#A47756] transition-colors"
               >
                 <Phone className="w-3 h-3 text-[#A47756]" />
-                <span>+971 54 596 2935</span>
+                <span>+971 54 169 6975</span>
               </a>
             </div>
           </div>
@@ -118,7 +118,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-2 text-xs font-medium tracking-loose-caps uppercase transition-colors duration-200 text-[#685A4E] hover:text-[#A47756]"
-              aria-label="AJJAYER on WhatsApp: +971 54 596 2935"
+              aria-label="AJJAYER on WhatsApp: +971 54 169 6975"
             >
               <WhatsAppIcon className="w-3.5 h-3.5 transition-transform duration-200 group-hover:scale-110" />
               <span>WhatsApp</span>

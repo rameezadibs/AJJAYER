@@ -4,8 +4,8 @@ import { ArrowRight, MessageSquare, Phone, ShieldCheck, Building2, Wrench, Check
 
 export default function Hero({ onOpenContact }) {
   // Official UAE Phone & WhatsApp number
-  const phoneNumber = "+971 54 596 2935";
-  const whatsappNumber = "971545962935";
+  const phoneNumber = "+971 54 169 6975";
+  const whatsappNumber = "971541696975";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hello AJJAYER Constructions, I would like to inquire about your contracting and engineering services.")}`;
 
   // Framer Motion staggered variants
@@ -105,7 +105,7 @@ export default function Hero({ onOpenContact }) {
               rel="noopener noreferrer"
               className="group relative inline-flex items-center justify-center gap-3 px-9 py-4 bg-[#A47756] text-[#F5F0E8] font-medium text-sm tracking-loose-caps uppercase transition-all duration-300 shadow-[0_4px_20px_rgba(164,119,86,0.25)] hover:bg-[#8E6142] hover:shadow-[0_6px_25px_rgba(164,119,86,0.4)] hover:-translate-y-0.5 active:translate-y-0 overflow-hidden"
               id="whatsapp-contact-link"
-              title="Connect on WhatsApp: +971 54 596 2935"
+              title="Connect on WhatsApp: +971 54 169 6975"
             >
               {/* Subtle architectural corner notches */}
               <span className="absolute top-0 left-0 w-1.5 h-1.5 border-t border-l border-white/60"></span>
@@ -121,11 +121,11 @@ export default function Hero({ onOpenContact }) {
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs font-mono text-[#685A4E] pt-2">
             <span className="text-[#A47756] tracking-widest uppercase text-[10px] font-semibold">DIRECT LINE &bull; WHATSAPP:</span>
             <a 
-              href="tel:+971545962935" 
+              href="tel:+971541696975" 
               className="flex items-center gap-1.5 font-semibold text-[#3B332B] hover:text-[#A47756] transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-[#A47756]" />
-              <span>+971 54 596 2935</span>
+              <span>+971 54 169 6975</span>
             </a>
           </div>
         </motion.div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin } from 'lucide-react';
+import { MapPin, Phone } from 'lucide-react';
 
 export default function Navbar() {
   return (
@@ -26,15 +26,20 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Right: DUBAI • UNITED ARAB EMIRATES & Coordinates */}
+        {/* Right: DUBAI • UNITED ARAB EMIRATES & Direct Phone */}
         <div className="text-right">
           <div className="flex items-center justify-end gap-2 text-[10px] sm:text-xs font-semibold tracking-architectural uppercase text-[#3B332B]">
             <span className="w-1.5 h-1.5 rounded-full bg-[#A47756] animate-pulse"></span>
             <span>DUBAI &bull; UNITED ARAB EMIRATES</span>
           </div>
-          <div className="hidden sm:flex items-center justify-end gap-2 text-[10px] font-mono tracking-wider text-[#685A4E]/80 mt-1">
-            <MapPin className="w-3 h-3 text-[#A47756]" />
-            <span>25.2048&deg; N, 55.2708&deg; E</span>
+          <div className="flex items-center justify-end gap-3 text-[11px] font-mono tracking-wider text-[#685A4E]/90 mt-1">
+            <a 
+              href="tel:+971541696975" 
+              className="flex items-center gap-1.5 font-medium hover:text-[#A47756] transition-colors"
+            >
+              <Phone className="w-3 h-3 text-[#A47756]" />
+              <span>+971 54 169 6975</span>
+            </a>
           </div>
         </div>
       </div>
